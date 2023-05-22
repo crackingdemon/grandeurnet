@@ -17,9 +17,9 @@ interface DataType {
 const postData: DataType[] = [
     {
         time: "5 min",
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Published on Startupon",
+        heading: 'The Poer of Social',
+        heading2: 'Media Marketing',
+        name: "Published on Grandeurnet",
         date: 'August 19, 2021',
         imgSrc: '/images/articles/article.png',
     },

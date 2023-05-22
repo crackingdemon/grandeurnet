@@ -44,6 +44,11 @@ html {
   ;
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgba(173, 139, 113, var(--tw-bg-opacity));
+}
+
 .hover-underline {
   display: inline-flex;
   position: relative;

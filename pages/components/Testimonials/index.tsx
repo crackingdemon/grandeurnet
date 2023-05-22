@@ -14,15 +14,19 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Sakshi Sharma",
+        profession: '',
+        comment: '“Thank you so much for making me look good! I have been receiving compliments about the website from everyone I speak with.',
         imgSrc: '/images/testimonial/user1.svg',
     },
+
+    
+
+
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Kevin Pow",
+        profession: '',
+        comment: 'I was looking for a designer who could help me take my business to the next level.They did just that! They took my vision and ran with it, creating a beautiful logo, that perfectly represents my company',
         imgSrc: '/images/testimonial/user2.svg',
     },
     {
@@ -32,9 +36,9 @@ const postData: DataType[] = [
         imgSrc: '/images/testimonial/user3.svg',
     },
     {
-        name: "Robert Fox",
+        name: "Naresh Gautam",
         profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'I am so gald i choose them for my website. They made the process easy and were so helpful in guiding me through the design process.The result was exactly what i wanted !',
         imgSrc: '/images/testimonial/user1.svg',
     },
     {
@@ -44,9 +48,9 @@ const postData: DataType[] = [
         imgSrc: '/images/testimonial/user2.svg',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Ritakshi Rawat",
+        profession: '',
+        comment: 'Best website developer in Dehradun.My website after design is much more effective. I will definitely recommend you further to my friends and family.',
         imgSrc: '/images/testimonial/user3.svg',
     },
 ]

@@ -1,6 +1,6 @@
+import React, { useEffect, useState } from 'react';
 import { Disclosure } from '@headlessui/react';
 import Link from 'next/link';
-import React from 'react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
@@ -30,10 +30,39 @@ function classNames(...classes: string[]) {
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = React.useState(false);
+    const [countdown, setCountdown] = useState(3600);
+    useEffect(() => {
+        const timer = setInterval(() => {
+          setCountdown((prevCountdown) => prevCountdown - 1);
+        }, 1000);
+    
+        // Clear interval when component is unmounted
+        return () => clearInterval(timer);
+      }, []);
+      const formatCountdown = (countdown) => {
+        const hours = Math.floor(countdown / 3600);
+        const minutes = Math.floor((countdown % 3600) / 60);
+        const seconds = countdown % 60;
+        return `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      };
 
     return (
         <Disclosure as="nav" className="navbar">
             <>
+           
+            {/* <div className="bg-gray-200 py-2 text-center">
+      <h1 className="text-2xl font-semibold">
+        Hurry up! Sale ends in{' '}
+        <span className="text-red-500">{formatCountdown(countdown)}</span>
+      </h1>
+    </div> */}
+  
+
+<div className="bg-primary text-black flex items-center justify-center">
+  <p className="uppercase text-xs tracking-widest text-center px-4 py-3">
+Book a call ☎️ back with our expert || <b>Offer ending in ⏰</b> <span className="text-red-500">{formatCountdown(countdown)}</span>
+  </p>
+</div>
                 <div className="mx-auto max-w-7xl p-3 md:p-6 lg:px-8">
                     <div className="relative flex h-12 sm:h-20 items-center">
                         <div className="flex flex-1 items-center sm:justify-between">
