@@ -30,21 +30,24 @@ function classNames(...classes: string[]) {
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = React.useState(false);
-    const [countdown, setCountdown] = useState(3600);
-    useEffect(() => {
-        const timer = setInterval(() => {
-          setCountdown((prevCountdown) => prevCountdown - 1);
-        }, 1000);
-    
-        // Clear interval when component is unmounted
-        return () => clearInterval(timer);
-      }, []);
-      const formatCountdown = (countdown) => {
-        const hours = Math.floor(countdown / 3600);
-        const minutes = Math.floor((countdown % 3600) / 60);
-        const seconds = countdown % 60;
-        return `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-      };
+    const [countdown, setCountdown] = useState<number>(3600); // Initial countdown value in seconds
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCountdown((prevCountdown) => prevCountdown - 1);
+    }, 1000);
+
+    // Clear interval when component is unmounted
+    return () => clearInterval(timer);
+  }, []);
+
+  // Format the countdown to display hours, minutes, and seconds
+  const formatCountdown = (countdown: number): string => {
+    const hours = Math.floor(countdown / 3600);
+    const minutes = Math.floor((countdown % 3600) / 60);
+    const seconds = countdown % 60;
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  };
 
     return (
         <Disclosure as="nav" className="navbar">
