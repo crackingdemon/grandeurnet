@@ -15,6 +15,8 @@ import Articles from './components/Articles/index';
 import Joinus from './components/Joinus/index';
 import Insta from './components/Insta/index';
 import Footer from './components/Footer/index';
+import Queryformpopup from './components/Queryformpopup/index';
+import Video from './components/Video/index'
 
 const Home = () => {
   return (
@@ -27,6 +29,8 @@ const Home = () => {
       </Head>
 
       <main>
+      <Queryformpopup />
+
         <Navbar />
         <Banner />
         <Aboutus />
@@ -35,10 +39,11 @@ const Home = () => {
         <Beliefs />
         <Wework />
         <Ourteam />
-        {/* <Featured /> */}
+        <Featured />
         <Manage />
         <FAQ />
         <Testimonials />
+        <Video/>
         <Articles />
         <Joinus />
         <Insta />

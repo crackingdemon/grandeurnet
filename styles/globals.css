@@ -46,7 +46,7 @@ html {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgba(173, 139, 113, var(--tw-bg-opacity));
+  background-color: rgba(75, 124, 72, var(--tw-bg-opacity));
 }
 
 .hover-underline {

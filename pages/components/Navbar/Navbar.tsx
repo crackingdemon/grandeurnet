@@ -62,8 +62,8 @@ const Navbar = () => {
   
 
 <div className="bg-primary text-black flex items-center justify-center">
-  <p className="uppercase text-xs tracking-widest text-center px-4 py-3">
-Book a call ☎️ back with our expert || <b>Offer ending in ⏰</b> <span className="text-red-500">{formatCountdown(countdown)}</span>
+  <p className="uppercase text-xs tracking-widest text-center px-4 py-3 text-white	">
+Book a call ☎️ back with our expert || <b>Offer ending in ⏰</b> <span className="text-white	">{formatCountdown(countdown)}</span>
   </p>
 </div>
                 <div className="mx-auto max-w-7xl p-3 md:p-6 lg:px-8">
