@@ -1,4 +1,6 @@
 import Head from 'next/head';
+
+
 import Navbar from './components/Navbar/index';
 import Banner from './components/Banner/index';
 import Aboutus from './components/Aboutus/index';
@@ -19,6 +21,8 @@ import Queryformpopup from './components/Queryformpopup/index';
 import Video from './components/Video/index'
 
 const Home = () => {
+
+   
   return (
     <>
       <Head>
@@ -49,6 +53,7 @@ const Home = () => {
         <Insta />
         <Footer />
       </main>
+     
     </>
   )
 }
