@@ -11,7 +11,8 @@ const Dedicated = () => {
 
                     {/* COLUMN-1 */}
                     <div>
-                        <Image src="/images/dedicated/man1.png" alt="man-icon" width={416} height={530} className="mx-auto md:mx-0 shadow-2xl outline outline-offset-4 rounded-md
+                        <Image src="/images/dedicated/grannnnd.jpeg
+                    " alt="man-icon" width={416} height={530} className="mx-auto md:mx-0 shadow-2xl outline outline-offset-4 rounded-md
 
 " />
                     </div>
