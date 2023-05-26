@@ -95,7 +95,8 @@ const Manage = () => {
     return (
         <div id="services-section">
             <div className='mx-auto max-w-7xl sm:py-20 lg:px-8 my-16'>
-                <h3 className='text-center text-4xl sm:text-65xl font-black'>Manage All Your Social Media <br /> Profiles From One Place.</h3>
+                <h3 className='text-center text-4xl sm:text-65xl font-black'>Handle all of your social media 
+ <br /> accounts in one location.</h3>
 
 
                 <div className='md:flex md:justify-around mt-20'>

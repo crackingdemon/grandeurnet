@@ -14,19 +14,19 @@ const Aboutdata: datatype[] = [
     {
         heading: "About us.",
         imgSrc: "/images/aboutus/imgOne.svg",
-        paragraph: 'We are an expert creative agency dedicated for supporting businesses with modern proven web development, graphic design, branding and marketing solutions.',
+        paragraph: 'Grandeur Net is a well-known graphic design and website design firm with experience in building beautiful and intuitive online experiences. Our creative team creates fascinating websites and powerful graphics that inspire and engage. Make your brand stand out by relying on GrandeNet for all of your digital design requirements.',
         link: 'Learn more'
     },
     {
         heading: "Services.",
         imgSrc: "/images/aboutus/imgTwo.svg",
-        paragraph: 'We believe in consistent learning to keep our consistent high level. We provide various technical services to our clients and our effort is to always give the best products with the latest technologies.',
+        paragraph: 'GrandeNet, a well-known website design and graphic design firm, provides a wide range of services to satisfy your needs for digital design. Our talented staff specialises in building appealing, mobile-friendly websites that improve your online presence. In addition, we offer excellent graphic design services for promotional materials, branding, and logo creation. GrandeNet provides great design quality, smooth user experiences, and visually stunning projects that captivate your audience and make a lasting impression.',
         link: 'Learn more'
     },
     {
         heading: "Our Works.",
         imgSrc: "/images/aboutus/imgThree.svg",
-        paragraph: 'We work with a lot of different clients on a variety of different projects, but we all have one thing in common: We love our clients.',
+        paragraph: 'Our outstanding work in website design, graphic design, SEO, and SMM is something we are proud of at GrandeNet. Our gifted team of web designers and developers creates visually attractive websites that are user-friendly and search engine-optimized. Additionally, we provide excellent graphic design services to produce eye-catching graphics for your brand. Our expertise in SEO and SMM guarantees that your online presence is enhanced, efficiently reaching your target audience, and promoting organic growth.',
         link: 'Learn more'
     },
 ]

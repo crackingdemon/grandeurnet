@@ -382,28 +382,9 @@ html {
 .imageContainer:hover>a>button {
   display: block;
 }
+#modal {
+  
+  
+  z-index: 9999;
 
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.animate-typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typewriter 2s steps(24) 1s normal both;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-.animate-blink {
-  animation: blink 0.7s infinite;
 }
