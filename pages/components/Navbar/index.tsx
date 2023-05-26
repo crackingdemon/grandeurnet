@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import React, { useEffect } from 'react';
 
 const Navbarin: React.FC = () => {
-    useEffect(() => {
+    // useEffect(() => {
         // The debounce function receives our function as a parameter
         // const debounce = (fn: Function) => {
         //     // This holds the requestAnimationFrame reference, so we can cancel it if we wish
@@ -23,16 +23,16 @@ const Navbarin: React.FC = () => {
 
         // Reads out the scroll position and stores it in the data attribute
         // so we can use it in our stylesheets
-        // const storeScroll = () => {
-        //     document.documentElement.dataset.scroll = window.scrollY.toString();
-        // }
+    //     const storeScroll = () => {
+    //         document.documentElement.dataset.scroll = window.scrollY.toString();
+    //     }
 
-        // Listen for new scroll events, here we debounce our `storeScroll` function
-        // document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+    //     // Listen for new scroll events, here we debounce our `storeScroll` function
+    //     document.addEventListener('scroll', debounce(storeScroll), { passive: true });
 
-        // Update scroll position for first time
-        // storeScroll();
-    }, [])
+    //     // Update scroll position for first time
+    //     storeScroll();
+    // }, [])
     return (
         <>
             <Navbar />
