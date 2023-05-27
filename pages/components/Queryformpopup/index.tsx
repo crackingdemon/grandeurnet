@@ -120,135 +120,128 @@ export default function Index() {
     return (
         <>
         
-        <div id="modal" className={`${show ? "flex" : "hidden"} w-screen h-screen fixed z-50 mx-auto justify-center items-center px-4 md:px-10 py-20 z-10` } >
-  <div className="bg-white px-10 border-[2px] py-10 rounded-md mt-16 justify-between pb-16">
-    <div className="">
-      <div className="flex justify-between">
-        <div className="flex items-center">
-        
-        <h1 className="text-3xl text-red-500 font-bold">
-       {animationText}☎️
-    </h1>
-        </div>
-        <img
-          className="cursor-pointer"
-          onClick={() => setshow(!show)}
-          src="https://s2.svgbox.net/hero-outline.svg?ic=x&color=000"
-          width="22"
-          height="22"
-        />
+        <div
+      id="modal"
+      className={`${
+        show ? 'flex' : 'hidden'
+      } w-screen h-screen fixed z-50 mx-auto justify-center items-center px-4 md:px-10 py-20 z-10`}
+    >
+      <div className="bg-white px-10 border-[2px] py-10 rounded-md mt-16 justify-between pb-16 flex flex-col md:flex-row">
+        <div className="w-full md:w-2/3 pr-8">
+          <div className="flex justify-between">
+            <div className="flex items-center">
+              <h1 className="text-3xl text-red-500 font-bold">
+                {animationText}☎️
+              </h1>
+            </div>
+            <img
+              className="cursor-pointer"
+              onClick={() => setshow(!show)}
+              src="https://s2.svgbox.net/hero-outline.svg?ic=x&color=000"
+              width="22"
+              height="22"
+            />
+          </div>
 
-      </div>
-  
-       
-
-      {/* Form section */}
-      <br />
-      <form
-        onSubmit={handleSubmit}
-        className="rounded-lg shadow-lg p-4"
-        style={{ background: 'linear-gradient(45deg, #FF5F6D, #FFC371)' }}
-      >
-        <div className="flex flex-wrap mb-2">
-          <div className="w-full md:w-1/2 pr-2">
-            <label htmlFor="name" className="block mb-1">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="border p-2 w-full rounded-md outline-none shadow-md"
-            />
-          </div>
-          <div className="w-full md:w-1/2 pl-2">
-            <label htmlFor="email" className="block mb-1">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="border p-2 w-full rounded-md outline-none shadow-md"
-            />
-          </div>
-        </div>
-        <div className="flex flex-wrap mb-2">
-          <div className="w-full md:w-1/2 pr-2">
-            <label htmlFor="whatsapp" className="block mb-1">
-              WhatsApp Number
-            </label>
-            <input
-              type="text"
-              id="whatsapp"
-              value={whatsapp}
-              onChange={(e) => setWhatsapp(e.target.value)}
-              className="border p-2 w-full rounded-md outline-none shadow-md"
-            />
-          </div>
-          <div className="w-full md:w-1/2 pl-2">
-            <label htmlFor="businessNature" className="block mb-1">
-              Business Nature
-            </label>
-            <input
-              type="text"
-              id="businessNature"
-              value={businessNature}
-              onChange={(e) => setBusinessNature(e.target.value)}
-              className="border p-2 w-full rounded-md outline-none shadow-md"
-            />
-          </div>
-        </div>
-        <div className="mb-2">
-          <label htmlFor="marketingBudget" className="block mb-1">
-            Marketing Budget
-          </label>
-          <select
-            id="marketingBudget"
-            value={marketingBudget}
-            onChange={(e) => setMarketingBudget(e.target.value)}
-            className="border p-2 rounded-md outline-none shadow-md w-full"
+          {/* Form section */}
+          <br />
+          <form
+            onSubmit={handleSubmit}
+            className="rounded-lg shadow-lg p-4"
+            style={{ background: 'linear-gradient(45deg, #FF5F6D, #FFC371)' }}
           >
-            <option value="">Select an option</option>
-            <option value="below-50k">Below 50k</option>
-            <option value="50k-1lk">50k - 1lk</option>
-            <option value="1lk-3lk">1lk - 3lk</option>
-            <option value="above-3lk">Above 3lk</option>
-          </select>
-        </div>
-        <button
-          type="submit"
-          className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300 ease-in-out shadow-lg"
-        >
-          Submit
-        </button>
-      </form>
-      {/* Form section ends here */}
-      
-      <p className="my-8 text-sm font-bold leading-5 text-gray-600">
-        Let us know about any queries you are facing and we will get back to you as soon as possible.
-      </p>
-    </div>
-    <div>
-      <div className="md:flex items-center lg:mt-0 mt-4"></div>
+            <div className="flex flex-wrap mb-2">
+              <div className="w-full md:w-1/2 pr-2">
+                <label htmlFor="name" className="block mb-1">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="border p-2 w-full rounded-md outline-none shadow-md"
+                />
+              </div>
+              <div className="w-full md:w-1/2 pl-2">
+                <label htmlFor="email" className="block mb-1">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="border p-2 w-full rounded-md outline-none shadow-md"
+                />
+              </div>
+            </div>
+            <div className="flex flex-wrap mb-2">
+              <div className="w-full md:w-1/2 pr-2">
+                <label htmlFor="whatsapp" className="block mb-1">
+                  WhatsApp Number
+                </label>
+                <input
+                  type="text"
+                  id="whatsapp"
+                  value={whatsapp}
+                  onChange={(e) => setWhatsapp(e.target.value)}
+                  className="border p-2 w-full rounded-md outline-none shadow-md"
+                />
+              </div>
+              <div className="w-full md:w-1/2 pl-2">
+                <label htmlFor="businessNature" className="block mb-1">
+                  Business Nature
+                </label>
+                <input
+                  type="text"
+                  id="businessNature"
+                  value={businessNature}
+                  onChange={(e) => setBusinessNature(e.target.value)}
+                  className="border p-2 w-full rounded-md outline-none shadow-md"
+                />
+              </div>
+            </div>
+            <div className="mb-2">
+              <label htmlFor="marketingBudget" className="block mb-1">
+                Marketing Budget
+              </label>
+              <select
+                id="marketingBudget"
+                value={marketingBudget}
+                onChange={(e) => setMarketingBudget(e.target.value)}
+                className="border p-2 rounded-md outline-none shadow-md w-full"
+              >
+                <option value="">Select an option</option>
+                <option value="below-50k">Below 50k</option>
+                <option value="50k-1lk">50k - 1lk</option>
+                <option value="1lk-3lk">1lk - 3lk</option>
+                <option value="above-3lk">Above 3lk</option>
+              </select>
+            </div>
+            <button
+              type="submit"
+              className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300 ease-in-out shadow-lg"
+            >
+              Submit
+            </button>
+          </form>
+          {/* Form section ends here */}
 
-      <div className="md:flex items-center mt-8">
-        {/* <div className="bg-black cursor-pointer text-white rounded-md px-5 mt-4 py-2">
-          Submit
-        </div> */}
-        <div></div>
-      </div>
-      <br />
-      <div className="bg-primary text-black flex items-center justify-center">
-        <p className="uppercase text-xs tracking-widest text-center px-4 py-3 text-white">
-          Book a call ☎️ back with our expert || <b>Offer ending in ⏰</b> <span className="text-white">{formatCountdown(countdown)}</span>
-        </p>
+          <p className="my-8 text-sm font-bold leading-5 text-gray-600">
+            Let us know about any queries you are facing and we will get back to you as soon as possible.
+          </p>
+        </div>
+        <div className="w-full md:w-1/3 mt-4 md:mt-0">
+        <iframe
+        src="https://widgets.sociablekit.com/google-reviews/iframe/147745"
+        frameBorder="0"
+        width="100%"
+        height="100%"
+      ></iframe>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
         </>
     );
