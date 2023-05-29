@@ -15,6 +15,13 @@ export default function Index() {
   const animationDelay = 100; // Delay between each character (in milliseconds)
   const loopDelay = 2000; // Delay before restarting the animation (in milliseconds)
 
+
+
+  //this chat 
+
+  const [success, setSuccess] = useState(false);
+
+  //endd 
   useEffect(() => {
     let wordIndex = 0;
     let charIndex = 0;
@@ -82,7 +89,8 @@ export default function Index() {
         setBusinessNature('');
         setMarketingBudget('');
   
-  
+        setSuccess(true);
+
         // Optionally, you can display a success message or close the modal here
         console.log('Email sent successfully!');
       } catch (error) {
@@ -107,6 +115,8 @@ export default function Index() {
 
     // Clear interval when component is unmounted
     return () => clearInterval(timer);
+
+
   }, []);
 
   // Format the countdown to display hours, minutes, and seconds
@@ -117,9 +127,28 @@ export default function Index() {
     return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
+
+
+
+
+
+  
     return (
         <>
-        
+        {success ? (
+  <>
+    <div className="text-green-500 text-center mt-4">
+      Form submitted successfully!
+    </div>
+    <div className="text-center mt-4">
+      Countdown: {formatCountdown(countdown)}
+    </div>
+  </>
+) : (
+  <>
+    {/* Existing JSX code */}
+  </>
+)}
         <div
       id="modal"
       className={`${
@@ -136,7 +165,12 @@ export default function Index() {
             </div>
             <img
               className="cursor-pointer"
-              onClick={() => setshow(!show)}
+             
+              onClick={() => {
+                setshow(!show);
+                setshow(false);
+                setSuccess(false);
+              }}
               src="https://s2.svgbox.net/hero-outline.svg?ic=x&color=000"
               width="22"
               height="22"
