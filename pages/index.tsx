@@ -50,6 +50,7 @@ const Home = () => {
         <Manage />
         <FAQ />
         <Testimonials />
+        
         <Video/>
         <Articles />
         <Joinus />
