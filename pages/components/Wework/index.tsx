@@ -12,34 +12,39 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
+        profession: 'Technical head ',
+        name: 'Sourav Raj',
+        imgSrc: '/images/wework/IMG_9202.jpg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
+        profession: 'Client Relationship Manager',
+        name: 'Ritu',
+        imgSrc: '/images/wework/ritu.jpg',
+    },
+    {
+        profession: 'Adminstrator head',
+        name: 'Vaibhav',
+        imgSrc: '/images/wework/vaibhav.JPG',
+    },
+    {
+        profession: 'International sales executive',
+        name: 'Tushar',
+        imgSrc: '/images/wework/tushar.jpg',
+    },
+    {
+        profession: ' Graphic designer',
+        name: 'Aman',
+        imgSrc: '/images/wework/aman.jpg',
+    },
+    {
+        profession: '  International support executive',
+        name: 'Patrick hues ',
+        imgSrc: '/images/wework/patrick.jpg',
+    },
+    {
+        profession: ' International leads specialist',
+        name: 'Michael Mathews',
         imgSrc: '/images/wework/avatar3.svg',
-    },
-    {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
-    },
-    {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
-    },
-    {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
-    },
-    {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
     },
 ]
 
@@ -52,7 +57,7 @@ export default class MultipleItems extends Component {
         const settings = {
             dots: false,
             infinite: true,
-            slidesToShow: 5,
+            slidesToShow: 3,
             // centerMode: true,
             slidesToScroll: 1,
             arrows: false,

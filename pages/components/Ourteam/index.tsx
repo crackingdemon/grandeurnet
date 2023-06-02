@@ -7,7 +7,7 @@ const index = () => {
             <h2 className="text-4xl sm:text-65xl font-bold text-center">Our team firmly believes that you should receive nothing less than  <br /> the very best treatment.</h2>
             <h3 className="text-2xl font-medium text-center pt-10 opacity-50">Our team is steadfastly committed to providing unmatched perfection, making sure that you get nothing less than  <br /> the best.</h3>
             <div className='grid grid-cols-1 my-16'>
-                <Image src="/images/team/teamimg.png" alt="office-image" height={684} width={1296} />
+                <Image src="/images/team/team.jpeg" alt="office-image" height={684} width={1296} />
             </div>
         </div>
     )

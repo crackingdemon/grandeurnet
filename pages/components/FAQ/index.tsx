@@ -12,15 +12,21 @@ const FAQ = () => {
                         {({ open }) => (
                             <>
                                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>Can you design my site?</span>
+                                    <span>Best digital marketing company in dehradun?</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } h-5 w-5 text-purple-500`}
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                    Craven omni memoria patriae zombieland clairvius narcisse <br /> religionis
-                                    sunt diri undead historiarum. Golums, zombies unrelenting <br /> et Raimi fascinati beheading.
+                                One of the top digital marketing businesses in Dehradun is Grandeur Net Company. Grandeur Net
+Company provides a wide range of digital marketing services with its knowledge and commitment to
+assisting businesses in thriving online. Search engine optimisation (SEO), pay-per-click (PPC)
+advertising, social media marketing, content marketing, and other areas are areas where their team of
+qualified experts thrives. They provide clients with results-driven solutions that increase website traffic,
+improve online exposure, and produce high-quality leads by customising their methods to fit each one of
+their individual demands. Grandeur Net Company is dedicated to helping businesses succeed in the
+rapidly changing digital landscape through innovation, excellence, and success.
                                 </Disclosure.Panel>
                             </>
                         )}
@@ -32,15 +38,19 @@ const FAQ = () => {
                         {({ open }) => (
                             <>
                                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>Can you code my site?</span>
+                                    <span>Digital marketing company in dehradun?</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } h-5 w-5 text-purple-500`}
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                    Craven omni memoria patriae zombieland clairvius narcisse <br /> religionis
-                                    sunt diri undead historiarum. Golums, zombies unrelenting <br /> et Raimi fascinati beheading.
+                                In search of the best digital marketing agency in Dehradun? Grandeur Net Company is your only option.
+Grandeur Net Company specialises in SEO, PPC advertising, social media marketing, and content
+marketing and offers specialised services to improve your online visibility. They deliver results-driven
+tactics to increase website traffic, improve exposure, and produce high-quality leads with a team of
+qualified specialists. Put your trust in Grandeur Net Company to advance your digital marketing initiatives
+and succeed in the cutthroat online environment.
                                 </Disclosure.Panel>
                             </>
                         )}

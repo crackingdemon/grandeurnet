@@ -1,7 +1,14 @@
+import React, { useState, useEffect,ChangeEvent, FormEvent,useRef  } from "react";
+import Typewriter from 'typewriter-effect';
+
 import Image from "next/image";
 const Banner = () => {
+
+    
   
     return (
+
+              
        <>
        <br></br><br></br><br></br><br></br>
         <div className='mx-auto max-w-7xl my-10 sm:py-10 px-6 lg:px-8'>
@@ -11,11 +18,17 @@ const Banner = () => {
 
                 <div className="mx-auto sm:mx-0">
                     <div className='py-3 text-center lg:text-start'>
-                        <button className='text-blue bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black'>Marketing Agency</button>
+                        <button className='text-blue bg-lightblue hover:shadow-xl text-sm md:text-lg font-bold px-6 py-1 rounded-3xl tracking-wider hover:text-white hover:bg-black'>Complete Online Solution</button>
                     </div>
-                    <div className="py-3 text-center lg:text-start">
+                    <div className="py-3 text-center lg:text-start  z-50">
                         <h1 className='text-6xl lg:text-40xl font-bold text-darkpurple'>
-                            Your Dream <br /> Growth Becomes  <br /> Reality Here.
+                        <Typewriter
+  options={{
+    strings: ['Your Dream <br> Growth becomes <br> Reality Here '],
+    autoStart: true,
+    loop: true,
+  }}
+/>
                         </h1>
                     </div>
                     <div className='my-7 text-center lg:text-start'>

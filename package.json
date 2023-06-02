@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.0.16",
     "@next/font": "13.1.6",
     "@notionhq/client": "^2.2.5",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "18.13.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
@@ -34,6 +35,7 @@
     "slick-carousel": "^1.8.1",
     "tw-elements": "^1.0.0-beta2",
     "typescript": "4.9.5",
+    "typewriter-effect": "^2.20.1",
     "windups": "^1.2.1"
   },
   "devDependencies": {
@@ -42,6 +44,6 @@
     "@types/react-slick": "^0.23.10",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6"
+    "tailwindcss": "^3.3.2"
   }
 }

@@ -20,13 +20,13 @@ const Aboutdata: datatype[] = [
     {
         heading: "Services.",
         imgSrc: "/images/aboutus/imgTwo.svg",
-        paragraph: 'GrandeNet, a well-known website design and graphic design firm, provides a wide range of services to satisfy your needs for digital design. Our talented staff specialises in building appealing, mobile-friendly websites that improve your online presence. In addition, we offer excellent graphic design services for promotional materials, branding, and logo creation. GrandeNet provides great design quality, smooth user experiences, and visually stunning projects that captivate your audience and make a lasting impression.',
+        paragraph: 'GrandeNet, a well-known website design and graphic design firm, provides a wide range of services to satisfy your needs for digital design. Our talented staff specialises in building appealing, mobile-friendly websites that improve your online presence. In addition, we offer excellent graphic design services for promotional materials, branding, and logo creation.',
         link: 'Learn more'
     },
     {
         heading: "Our Works.",
         imgSrc: "/images/aboutus/imgThree.svg",
-        paragraph: 'Our outstanding work in website design, graphic design, SEO, and SMM is something we are proud of at GrandeNet. Our gifted team of web designers and developers creates visually attractive websites that are user-friendly and search engine-optimized. Additionally, we provide excellent graphic design services to produce eye-catching graphics for your brand. Our expertise in SEO and SMM guarantees that your online presence is enhanced, efficiently reaching your target audience, and promoting organic growth.',
+        paragraph: 'Our outstanding work in website design, graphic design, SEO, and SMM is something we are proud of at GrandeNet. Our gifted team of web designers and developers creates visually attractive websites that are user-friendly and search engine-optimized. Additionally, we provide excellent graphic design services to produce eye-catching graphics for your brand. ',
         link: 'Learn more'
     },
 ]

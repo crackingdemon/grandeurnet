@@ -1,6 +1,8 @@
 import React, { useState, useEffect,ChangeEvent, FormEvent } from "react";
 import emailjs from 'emailjs-com';
 import axios from 'axios';
+import Image from 'next/image';
+
 
 interface FormData {
   name: string;
@@ -267,8 +269,9 @@ export default function Index() {
           </p>
         </div>
         <div className="w-full md:w-1/3 mt-4 md:mt-0">
+        <h2 className="bold ">  Google Reviews</h2>
         <iframe
-        src="https://widgets.sociablekit.com/google-reviews/iframe/147745"
+        src="https://widgets.sociablekit.com/google-reviews/iframe/150151"
         frameBorder="0"
         width="100%"
         height="100%"
