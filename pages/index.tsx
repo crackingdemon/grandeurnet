@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import 'tailwindcss/tailwind.css';
 
 
 import Navbar from './components/Navbar/index';
@@ -19,6 +20,8 @@ import Insta from './components/Insta/index';
 import Footer from './components/Footer/index';
 import Queryformpopup from './components/Queryformpopup/index';
 import Video from './components/Video/index'
+import Project from './components/Projects/index'
+import Brand from './components/Brands/index'
 
 const Home = () => {
 
@@ -38,22 +41,28 @@ const Home = () => {
       <Queryformpopup />
 
         <Navbar />
-     
+
         <Banner />
-        <Aboutus />
-        <Dedicated />
         <Digital />
         <Beliefs />
-        <Wework />
+        <Project/>
+        <Brand/>
+
+        {/* <Aboutus /> */}
+        {/* <Dedicated /> */}
+        {/* <Wework /> */}
         <Ourteam />
         <Featured />
+        
         <Manage />
         <FAQ />
+        
         <Testimonials />
         
         <Video/>
-        <Articles />
+        {/* <Articles /> */}
         <Joinus />
+
         <Insta />
         <Footer />
       </main>

@@ -8,6 +8,7 @@ const index = () => {
             <h3 className="text-2xl font-medium text-center pt-10 opacity-50">Our team is steadfastly committed to providing unmatched perfection, making sure that you get nothing less than  <br /> the best.</h3>
             <div className='grid grid-cols-1 my-16'>
                 <Image src="/images/team/team.jpeg" alt="office-image" height={684} width={1296} />
+                
             </div>
         </div>
     )

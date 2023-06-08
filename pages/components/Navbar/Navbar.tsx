@@ -83,7 +83,7 @@ Book a call ☎️ back with our expert || <b>Offer ending in ⏰</b> <span clas
                             {/* LINKS */}
 
                             <div className="hidden lg:flex items-center border-right ">
-                                <div className="flex justify-end space-x-4">
+                                {/* <div className="flex justify-end space-x-4">
                                     {navigation.map((item) => (
                                         <Link
                                             key={item.name}
@@ -97,7 +97,18 @@ Book a call ☎️ back with our expert || <b>Offer ending in ⏰</b> <span clas
                                             {item.name}
                                         </Link>
                                     ))}
-                                </div>
+                                </div> */}
+
+<div className="sm:mr-3 w-full">
+  <Link href="#project-section" passHref legacyBehavior>
+    <a rel="noopener noreferrer">
+      <button type="submit" className="joinButton w-full text-xl text-white font-semibold text-center rounded-xl sm:rounded-full bg-blue hover:bg-btnblue">
+        Our Projects
+      </button>
+    </a>
+  </Link>
+</div>
+
 
                             </div>
                             {/* <button className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button> */}
