@@ -11,65 +11,133 @@ interface DataType {
 const postData: DataType[] = [
   {
     heading: 'Work 1.',
-    imgSrc: '/images/featured/feat1.jpg',
+    imgSrc: '/images/brands/b1.jpeg',
   },
   {
     heading: 'work2.',
-    imgSrc: '/images/featured/feat2.jpg',
+    imgSrc: '/images/brands/b2.jpeg',
   },
   {
     heading: 'work 3.',
-    imgSrc: '/images/featured/feat1.jpg',
+    imgSrc: '/images/brands/b3.jpeg',
   },
   {
     heading: 'work 5.',
-    imgSrc: '/images/featured/feat2.jpg',
+    imgSrc: '/images/brands/b4.jpeg',
   },
   {
     heading: 'work 5.',
-    imgSrc: '/images/featured/feat2.jpg',
+    imgSrc: '/images/brands/b5littlestanford.jpeg',
   },
   {
     heading: 'work 5.',
-    imgSrc: '/images/featured/feat2.jpg',
+    imgSrc: '/images/brands/feat2.jpg',
   },
   {
     heading: 'work 5.',
-    imgSrc: '/images/featured/feat2.jpg',
+    imgSrc: '/images/brands/feat2.jpg',
   },
 ];
 const postData2: DataType[] = [
     {
       heading: 'Work 1.',
-      imgSrc: '/images/featured/feat1.jpg',
+      imgSrc: '/images/brands/b1.jpeg',
     },
     {
       heading: 'work2.',
-      imgSrc: '/images/featured/feat2.jpg',
+      imgSrc: '/images/brands/b2.jpeg',
     },
     {
       heading: 'work 3.',
-      imgSrc: '/images/featured/feat1.jpg',
+      imgSrc: '/images/brands/b3.jpeg',
     },
     {
       heading: 'work 5.',
-      imgSrc: '/images/featured/feat2.jpg',
+      imgSrc: '/images/brands/b4.jpeg',
     },
     {
         heading: 'Work 1.',
-        imgSrc: '/images/featured/feat1.jpg',
+        imgSrc: '/images/brands/b5littlestanford.jpeg',
       },
       {
         heading: 'work2.',
-        imgSrc: '/images/featured/feat2.jpg',
+        imgSrc: '/images/brands/b6briofit.jpeg',
       },
       {
         heading: 'work 3.',
-        imgSrc: '/images/featured/feat1.jpg',
+        imgSrc: '/images/brands/b7florence.jpeg',
       },
       {
         heading: 'work 5.',
-        imgSrc: '/images/featured/feat2.jpg',
+        imgSrc: '/images/brands/b8shiva.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b9bansal.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b10dentfit.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b11hollywood.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b12delhi.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b13doons.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b14maaganga.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b14property.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b16saisgree.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b17khandelwal.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b18khandelwalce.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b19rajdhani.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b20gym.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b21sheeba.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b22apolo.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b23oomph.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b24rawgym.jpeg',
+      },
+      {
+        heading: 'work 5.',
+        imgSrc: '/images/brands/b25aarambh.jpeg',
       },
   ];
 
