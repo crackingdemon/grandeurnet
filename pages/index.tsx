@@ -62,8 +62,9 @@ const Home = () => {
         <Video/>
         {/* <Articles /> */}
         <Joinus />
-
+ 
         <Insta />
+        
         <Footer />
       </main>
       </div>

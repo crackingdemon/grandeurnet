@@ -7,7 +7,7 @@ const Join = () => {
                 <div className="text-center">
                     <h3 className="text-blue text-lg font-normal tracking-widest">JOIN US</h3>
                     <h2 className="text-4xl sm:text-6xl font-bold my-6 leading-10"> Take your business to <br /> the new level.</h2>
-                    <p className="text-lightblack text-base font-normal">Craven omni memoria patriae zombieland clairvius narcisse religionis sunt diri undead <br /> historiarum. Golums, zombies unrelenting et Raimi fascinati beheading.</p>
+                    <p className="text-lightblack text-base font-normal">Get Your Website Free SEo Report By just Messaging Us</p>
                 </div>
 
                 <div className="mx-auto max-w-4xl pt-5">

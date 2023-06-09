@@ -11,8 +11,12 @@ const Beliefs = () => {
                     <h3 className="text-4xl sm:text-65xl font-bold text-grey leading-snug mb-5 text-center sm:text-start">We Can <span className="text-grey">Always <span className="text-white">Shine</span> Together</span></h3>
                     <h5 className="text-offwhite pt-2 mb-5 text-center sm:text-start"></h5>
                     <div className="text-center sm:text-start">
-                        <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">Get Started</button>
-                    </div>
+  <a href="wa.me/+919149050623" target="_blank">
+    <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">
+      Get Started
+    </button>
+  </a>
+</div>
                 </div>
 
                 {/* COLUMN-2 */}
