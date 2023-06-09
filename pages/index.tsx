@@ -44,6 +44,16 @@ const Home = () => {
 
         <Banner />
         <Digital />
+        <div className="flex flex-col items-center w-2/3 mx-auto">
+      <div className="relative h-0 overflow-hidden max-w-full w-full rounded-lg" style={{ paddingBottom: '56.25%' }}>
+        <iframe
+          src="https://www.youtube.com/embed/hv4o7DAwsSs"
+          frameBorder="0"
+          allowFullScreen
+          className="absolute top-0 left-0 w-full h-full shadow-lg"
+        ></iframe>
+      </div>
+    </div>
         <Beliefs />
         <Project/>
         <Brand/>
