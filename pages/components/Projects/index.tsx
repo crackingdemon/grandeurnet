@@ -84,7 +84,7 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="# "  target="_blank">
+          <a href="https://www.instagram.com/briofitgym/"  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
                 src="/images/project/briofit.jpeg"
@@ -275,7 +275,7 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="# "  target="_blank">
+          <a href="https://www.instagram.com/dent_fit_dental_care_/"  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
                 src="/images/project/dentfit.jpeg"
@@ -661,7 +661,7 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="# "  target="_blank">
+          <a href="https://www.instagram.com/khandelwalmatchingcentre/"  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
                 src="/images/project/khandelwal.jpeg"

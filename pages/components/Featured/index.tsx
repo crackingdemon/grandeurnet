@@ -9,20 +9,20 @@ interface DataType {
 
 const postData: DataType[] = [
   {
-    heading: 'Work 1.',
-    imgSrc: '/images/featured/feat1.jpg',
+    heading: 'CRC Derma',
+    imgSrc: '/images/project/crcderma.jpeg',
   },
   {
-    heading: 'work2.',
-    imgSrc: '/images/featured/feat2.jpg',
+    heading: 'Hollywood SPA.',
+    imgSrc: '/images/project/hollywoodspa.jpeg',
   },
   {
-    heading: 'work 3.',
-    imgSrc: '/images/featured/feat1.jpg',
+    heading: 'Florence',
+    imgSrc: '/images/project/florence.jpeg',
   },
   {
-    heading: 'work 5.',
-    imgSrc: '/images/featured/feat2.jpg',
+    heading: 'Mandoli',
+    imgSrc: '/images/project/mandoli.jpeg',
   },
 ];
 
