@@ -2,12 +2,10 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState,useEffect } from 'react';
 import Link from 'next/link';
 
-import { useRouter } from 'next/router';
 
 
 const Contactusform = () => {
 
-    const router = useRouter();
 
     useEffect(() => {
       const handleSubmit = (event: Event) => {
@@ -25,7 +23,7 @@ const Contactusform = () => {
               alert('Form Submitted. Thanks.');
               resetForm(); // Reset the form after successful submission
               // Redirect the user to a custom thank-you page
-              router.push('/thankyoupage');
+              
             })
             .catch((error) => {
               console.error('Form submission error:', error);
