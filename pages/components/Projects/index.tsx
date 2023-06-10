@@ -339,7 +339,7 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="# "  target="_blank">
+          <a href="https://crackingdemon.github.io/doonschool.github.io/"  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
                 src="/images/project/doonsainik.jpeg"
@@ -725,7 +725,7 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="# "  target="_blank">
+          <a href="https://www.instagram.com/littlestanford6/"  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
                 src="/images/project/littlestanford.jpeg"
@@ -853,7 +853,7 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="# "  target="_blank">
+          <a href="https://www.instagram.com/negijewellers1/"  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
                 src="/images/project/negijewellers.jpeg"
@@ -917,7 +917,7 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="# "  target="_blank">
+          <a href="https://www.instagram.com/dr.pals_dental/ "  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
                 src="/images/project/paldoc.jpeg"
@@ -1235,7 +1235,7 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="# "  target="_blank">
+          <a href="https://www.instagram.com/star_jewellers_dehradun/"  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
                 src="/images/project/sjstar.jpeg"

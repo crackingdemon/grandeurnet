@@ -13,7 +13,7 @@ export default function Blog() {
       <ul>
         {posts.map((post) => (
           <li key={post.id} className="my-2">
-            <Link legacyBehavior href={`/blog/${post.id}`}>
+            <Link  href={`/blog/${post.id}`} legacyBehavior>
               <a className="text-blue-500" style={{ textDecoration: 'underline' }}>
                 {post.title}
               </a>

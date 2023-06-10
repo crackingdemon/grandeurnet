@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
-
+import logo from "../../../public/logo.png"
+import Link from 'next/link';
+import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 
 import Navbar from './components/Navbar/index';
@@ -89,6 +91,23 @@ const Home = () => {
         <Insta />
         
         <Footer />
+        <footer className="bg-gray-200 py-4 px-8 flex justify-between items-center">
+        <div className="">
+                <Link href="https://linktr.ee/grandeurnet" legacyBehavior>
+                  <Image src="/images/linkrr.png" alt="barcode" width={150} height={200} layout="fixed" className="static"/>
+                </Link>
+              </div>
+      <div className="flex items-center">
+        <p className="mr-4"></p>
+        {/* <img src="/images/linkrr.png"  alt="Logo" width={250} height={160}  /> */}
+        <img src="/images/logo.png" alt="Logo" width={250} height={160}  />
+      </div>
+      
+      <div className="flex items-center">
+        <a href="https://www.grandeurnet.com/privacy.html" target="_blank" className="mr-4">Privacy Policies</a>
+        <a href="/https://www.grandeurnet.com/terms.html" target="_blank" className="mr-4">Terms</a>
+      </div>
+    </footer>
       </main>
       </div>
     </>

@@ -92,16 +92,16 @@ const Index: NextPage = () => {
 /></h1>
               </div>
               <Image
-               alt="Description of the image"
-                className="cursor-pointer"
-                onClick={() => {
-                  setshow(!show);
-                  setshow(false);
-                }}
-                src="https://s2.svgbox.net/hero-outline.svg?ic=x&color=000"
-                width="22"
-                height="22"
-              />
+  alt="Description of the image"
+  className="cursor-pointer"
+  onClick={() => {
+    setshow(!show);
+    setshow(false);
+  }}
+  src="/images/hero-outline.svg"
+  width={22}
+  height={22}
+/>
             </div>
 
             {/* Form section */}
@@ -212,7 +212,7 @@ const Index: NextPage = () => {
   <input type="hidden" name="pageHistory" value="0" />
 
   <button
-    className="btn btn-primary"
+    className="btn btn-primary  border-2 border-blue-500 shadow-lg hover:shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
     type="submit"
     value="Submit"
     onClick={() => {

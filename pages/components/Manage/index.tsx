@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Switch } from '@headlessui/react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 const names = [
     {
         heading: "Startup",
-        price: 41,
+        price: 0,
         user: 'per user, per month',
         button: "More Offers",
         profiles: 'we will',
@@ -21,7 +21,7 @@ const names = [
     },
     {
         heading: "Business",
-        price: 29,
+        price: 0,
         user: 'per user, per month',
         button: "More Offers",
         profiles: 'we will',
@@ -37,7 +37,7 @@ const names = [
     },
     {
         heading: "Agency",
-        price: 139,
+        price: 0,
         user: 'per user, per month',
         button: "More Offers",
         profiles: 'we will',
@@ -159,7 +159,11 @@ const Manage = () => {
               <h4 className='text-2xl font-bold mb-3'>{items.heading}</h4>
               <h2 className='text-5xl sm:text-65xl font-extrabold mb-3'>${items.price}</h2>
               <p className='text-sm font-medium text-bggrey mb-6'>{items.user}</p>
-              <button className='text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6'>{items.button}</button>
+              <Link href="https://www.google.com/maps/dir//grandeurnet/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8b19644b04312995:0xe7616aa73e51ec6d?sa=X&ved=2ahUKEwi8stvO4pP_AhVRzmEKHXe6ANYQ9Rd6BAgpEAU" passHref  legacyBehavior>
+        <a target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6">
+          {items.button}
+        </a>
+      </Link>
               <hr style={{ color: "darkgrey", width: "50%", margin: "auto" }} />
               <h3 className='text-sm font-medium text-darkgrey mb-3 mt-6'>{items.profiles}</h3>
               <h3 className='text-sm font-medium text-darkgrey mb-3'>{items.posts}</h3>

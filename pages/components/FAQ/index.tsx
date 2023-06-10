@@ -131,13 +131,20 @@ and help it reach its maximum potential in Dehradun's digital environment.
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                    <span>Why website is important?</span>
+                    <span>How young entrepreneurs will grow in india?</span>
                     <ChevronUpIcon
                       className={`h-5 w-5 text-purple-500 ${open ? 'rotate-180 transform' : ''}`}
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                    Any business needs a website since it acts as its online identity and storefront. It offers a stage on which to present goods, services, and brand identity to an international audience. A professionally made and user-friendly website improves credibility, fosters confidence, and draws in potential clients. It serves as a focal point for engagement, communication, and information, providing visitors with convenience and accessibility. A website is necessary for creating an online presence, extending reach, and fostering business success in the digital age due to the growing reliance on the internet.
+                  Grandeur Net Company is essential to India's development of new entrepreneurs. Grandeur Net
+Company offers young entrepreneurs complete support to launch and expand their firms through their
+knowledge and specialised services. They provide advice in a variety of fields, including social media
+marketing, website creation, SEO, and more. Grandeur Net Company supports young entrepreneurs by
+using the effectiveness of online platforms and techniques to assist them become more visible, connect
+with their target market, and propel their businesses forward. Grandeur Net Company is committed to
+fostering and empowering young talent, which helps to strengthen and expand India's entrepreneurial
+environment.
                   </Disclosure.Panel>
                 </>
               )}

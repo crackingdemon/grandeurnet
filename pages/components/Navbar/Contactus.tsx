@@ -253,7 +253,7 @@ const Contactusform = () => {
   <input type="hidden" name="pageHistory" value="0" />
 
   <button
-    className="btn btn-primary"
+    className="btn btn-primary  border-2 border-blue-500 shadow-lg hover:shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
     type="submit"
     value="Submit"
     onClick={() => {

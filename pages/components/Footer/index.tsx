@@ -26,9 +26,9 @@ const MapContainer = () => {
             <h3 className="text-white text-4xl font-semibold leading-9 mb-4 lg:mb-20">Grandeur Net</h3>
             <div className="flex justify-center sm:justify-start gap-2">
               <div className="">
-                <Link href="https://linktr.ee/grandeurnet">
+                {/* <Link href="https://linktr.ee/grandeurnet">
                   <Image src="/images/barcode.jpeg" alt="barcode" width={150} height={200} layout="fixed" className="static" />
-                </Link>
+                </Link> */}
               </div>
               <br></br>
             </div>
