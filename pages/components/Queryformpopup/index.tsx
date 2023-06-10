@@ -39,7 +39,7 @@ const Index: NextPage = () => {
     return () => {
       form?.removeEventListener('submit', handleSubmit);
     };
-  }, []);
+  }, [router]);
 
   const resetForm = () => {
     const form = document.getElementById('bootstrapForm') as HTMLFormElement | null;
