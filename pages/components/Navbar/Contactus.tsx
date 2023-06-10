@@ -1,9 +1,74 @@
 import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
+import { Fragment, useState,useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 
 const Contactusform = () => {
+
+    const router = useRouter();
+
+    useEffect(() => {
+      const handleSubmit = (event: Event) => {
+        event.preventDefault();
+        const form = document.getElementById('bootstrapForm') as HTMLFormElement | null;
+  
+        if (form) {
+          const formData = new FormData(form);
+  
+          fetch('https://docs.google.com/forms/d/e/1FAIpQLSf7wJXszNWIXrORhXmDPJkOnRJEZVvjHYEm0xIdk-jJVYqleQ/formResponse', {
+            method: 'POST',
+            body: formData,
+          })
+            .then(() => {
+              alert('Form Submitted. Thanks.');
+              resetForm(); // Reset the form after successful submission
+              // Redirect the user to a custom thank-you page
+              router.push('/thankyoupage');
+            })
+            .catch((error) => {
+              console.error('Form submission error:', error);
+              // Handle form submission error
+            });
+        }
+      };
+  
+      const form = document.getElementById('bootstrapForm');
+      form?.addEventListener('submit', handleSubmit);
+  
+      return () => {
+        form?.removeEventListener('submit', handleSubmit);
+      };
+    }, []);
+  
+    const resetForm = () => {
+      const form = document.getElementById('bootstrapForm') as HTMLFormElement | null;
+  
+      if (form) {
+        form.reset(); // Reset the form fields to their initial state
+      }
+    };
+
+
+
+    const [show, setshow] = useState(false);
+    const [countdown, setCountdown] = useState<number>(3600); // Initial countdown value in seconds
+  
+    useEffect(() => {
+      setTimeout(() => {
+        setshow(true);
+      }, 1000);
+    }, []);
+
+
+
+
+
+
+
+
+
+
     let [isOpen, setIsOpen] = useState(false)
 
     const [inputValues, setInputValues] = useState({
@@ -81,62 +146,126 @@ const Contactusform = () => {
                             >
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
 
-                                    <div className="py-8 lg:py-8 px-4 mx-auto max-w-screen-md">
-                                        <div className="flex flex-shrink-0 items-center justify-center">
-                                            <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
-                                                Desgy Solutions
-                                            </Link>
-                                        </div>
-                                        <p className="mb-8 lg:mb-16 mt-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Contact us now? Want to send us a feedback?</p>
-                                        <form action="#" className="space-y-8" onSubmit={handleSubmit}>
-                                            <div>
-                                                <label htmlFor="text" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
-                                                <input
-                                                    id="text"
+                                <form
+  id="bootstrapForm"
+  action="https://docs.google.com/forms/d/e/1FAIpQLSf7wJXszNWIXrORhXmDPJkOnRJEZVvjHYEm0xIdk-jJVYqleQ/formResponse"
+  target="_self"
+  method="POST"
+  className="rounded-lg shadow-lg p-4"
+  style={{ background: 'linear-gradient(45deg, #FF5F6D, #FFC371)' }}
+>
+  <div className="flex flex-wrap -mx-2">
+    <div className="w-full sm:w-1/2 px-2">
+      <fieldset>
+        <legend>
+          <label htmlFor="183274325">Name</label>
+        </legend>
+        <div className="form-group">
+          <input
+            id="183274325"
+            type="text"
+            name="entry.183274325"
+            className="form-control"
+          />
+        </div>
+      </fieldset>
+    </div>
+    <div className="w-full sm:w-1/2 px-2">
+      <fieldset>
+        <legend>
+          <label htmlFor="608973755">Email</label>
+        </legend>
+        <div className="form-group">
+          <input
+            id="608973755"
+            type="text"
+            name="entry.608973755"
+            className="form-control"
+          />
+        </div>
+      </fieldset>
+    </div>
+    <div className="w-full sm:w-1/2 px-2">
+      <fieldset>
+        <legend>
+          <label htmlFor="1906255374">WhatsApp Number</label>
+        </legend>
+        <div className="form-group">
+          <input
+            id="1906255374"
+            type="text"
+            name="entry.1906255374"
+            className="form-control"
+          />
+        </div>
+      </fieldset>
+    </div>
+    <div className="w-full sm:w-1/2 px-2">
+      <fieldset>
+        <legend>
+          <label htmlFor="661978007">Business Nature</label>
+        </legend>
+        <div className="form-group">
+          <input
+            id="661978007"
+            type="text"
+            name="entry.661978007"
+            className="form-control"
+          />
+        </div>
+      </fieldset>
+    </div>
+  </div>
 
-                                                    name="input1"
-                                                    value={inputValues.input1}
-                                                    onChange={handleChange}
+  <fieldset>
+    <legend>Marketing Budget?</legend>
+    <div className="form-group">
+      <div className="radio">
+        <label>
+          <input type="radio" name="entry.536277257" value="Below 50k" />
+          Below 50k
+        </label>
+      </div>
+      <div className="radio">
+        <label>
+          <input type="radio" name="entry.536277257" value="50k to 1lk" />
+          50k to 1lk
+        </label>
+      </div>
+      <div className="radio">
+        <label>
+          <input type="radio" name="entry.536277257" value="1lk to 3lk" />
+          1lk to 3lk
+        </label>
+      </div>
+      <div className="radio">
+        <label>
+          <input type="radio" name="entry.536277257" value="above 3lk" />
+          above 3lk
+        </label>
+      </div>
+    </div>
+  </fieldset>
 
-                                                    type="text"
-                                                    autoComplete="current-password"
-                                                    required
-                                                    className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    placeholder="Name..."
-                                                />
-                                            </div>
-                                            <div>
-                                                <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                                                <input
-                                                    id="email"
-                                                    name="input2"
-                                                    value={inputValues.input2}
-                                                    onChange={handleChange}
+  <input type="hidden" name="fvv" value="1" />
+  <input type="hidden" name="fbzx" value="-4203744167857321587" />
+  <input type="hidden" name="pageHistory" value="0" />
 
-                                                    type="email"
-                                                    autoComplete="current-password"
-                                                    required
-                                                    className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                                                    placeholder="xyz@email.com"
-                                                />
-                                            </div>
-                                            <div className="sm:col-span-2">
-                                                <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                                                <textarea
-                                                    id="message"
-                                                    name="input3"
-                                                    value={inputValues.input3}
-                                                    onChange={handleChange}
-                                                    className="relative block w-full appearance-none  rounded-md border border-linegrey px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Leave a comment..."></textarea>
-                                            </div>
-                                            <button type="submit"
-                                                onClick={handleClick}
-                                                disabled={isDisabled}
-                                                className="py-3 px-5 text-sm disabled:opacity-50 font-medium w-full text-center text-white rounded-lg bg-blue focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+  <button
+    className="btn btn-primary"
+    type="submit"
+    value="Submit"
+    onClick={() => {
+      setTimeout(() => {
+        setshow(!show);
+        setshow(false);
+      }, 3000); // 3000 milliseconds = 3 seconds
+    }}
+  >
+    Submit
+  </button>
+</form>
 
-                                        </form>
-
-                                    </div>
 
                                     {/* <div className='flex justify-end'>
                                         <button type="button"

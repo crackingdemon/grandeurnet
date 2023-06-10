@@ -1,3 +1,4 @@
+import Link from 'next/link';
 
 const Beliefs = () => {
     return (
@@ -26,7 +27,11 @@ const Beliefs = () => {
                     <h3 className="text-4xl sm:text-65xl font-bold text-black leading-snug mb-5 text-center sm:text-start"><span className="text-blue">Build</span> that great idea that you have.</h3>
                     <h5 className="bluish pt-2 mb-5 text-center sm:text-start"></h5>
                     <div className="text-center sm:text-start">
-                        <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">Learn more</button>
+
+                    <Link href="#services-section" passHref legacyBehavior>
+                    <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">Learn more</button>
+  </Link>
+                   
                     </div>
                 </div>
 

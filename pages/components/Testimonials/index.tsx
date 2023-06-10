@@ -17,38 +17,38 @@ const postData: DataType[] = [
         name: "Sakshi Sharma",
         profession: '',
         comment: '“Thank you so much for making me look good! I have been receiving compliments about the website from everyone I speak with.',
-        imgSrc: '/images/testimonial/user1.svg',
+        imgSrc: '/images/testimonial/pic1.jpg',
     },
 
     
 
 
     {
-        name: "Kevin Pow",
+        name: "Nancy smith",
         profession: '',
         comment: 'I was looking for a designer who could help me take my business to the next level.They did just that! They took my vision and ran with it, creating a beautiful logo, that perfectly represents my company',
-        imgSrc: '/images/testimonial/user2.svg',
+        imgSrc: '/images/testimonial/nacysmith.jpeg',
     },
     {
         name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
+        profession: '',
         comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
+        imgSrc: '/images/testimonial/tariun.jpeg',
     },
     {
         name: "Naresh Gautam",
-        profession: 'CEO, Parkview Int.Ltd',
+        profession: '',
         comment: 'I am so gald i choose them for my website. They made the process easy and were so helpful in guiding me through the design process.The result was exactly what i wanted !',
         imgSrc: '/images/testimonial/user1.svg',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "luci",
+        profession: '',
+        comment: 'Grandeurnet Digital Agency exceeded my expectations! Their expertise and professionalism delivered outstanding results for my business. Highly recommended!',
         imgSrc: '/images/testimonial/user2.svg',
     },
     {
-        name: "Ritakshi Rawat",
+        name: "Tarun",
         profession: '',
         comment: 'Best website developer in Dehradun.My website after design is much more effective. I will definitely recommend you further to my friends and family.',
         imgSrc: '/images/testimonial/user3.svg',
@@ -68,7 +68,7 @@ export default class MultipleItems extends Component {
             // centerMode: true,
             slidesToScroll: 2,
             arrows: false,
-            autoplay: false,
+            autoplay: true,
             speed: 500,
             autoplaySpeed: 2000,
             cssEase: "linear",
