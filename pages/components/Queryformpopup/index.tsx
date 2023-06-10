@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Typewriter from 'typewriter-effect';
+import Image from 'next/image';
+
 
 const Index: NextPage = () => {
   const router = useRouter();
@@ -89,7 +91,8 @@ const Index: NextPage = () => {
   }}
 /></h1>
               </div>
-              <img
+              <Image
+               alt="Description of the image"
                 className="cursor-pointer"
                 onClick={() => {
                   setshow(!show);
