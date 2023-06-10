@@ -1,6 +1,5 @@
 {
-  "rules": {
-    "no-unused-vars": "off",
-    "react/react-in-jsx-scope": "off"
-  }
+  "extends": "next/core-web-vitals",
+  "rules": { "react/no-unescaped-entities": 0 }
+
 }
