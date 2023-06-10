@@ -4,7 +4,6 @@ import logo from "../../../public/logo.png"
 import Link from 'next/link';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
-
 import Navbar from './components/Navbar/index';
 import Banner from './components/Banner/index';
 import Aboutus from './components/Aboutus/index';
@@ -25,6 +24,7 @@ import Queryformpopup from './components/Queryformpopup/index';
 import Video from './components/Video/index'
 import Project from './components/Projects/index'
 import Brand from './components/Brands/index'
+/* eslint-disable */
 
 const Home = () => {
 
@@ -100,7 +100,7 @@ const Home = () => {
       <div className="flex items-center">
         <p className="mr-4"></p>
         {/* <img src="/images/linkrr.png"  alt="Logo" width={250} height={160}  /> */}
-        <img src="/images/logo.png" alt="Logo" width={250} height={160}  />
+        <Image src="/images/logo.png" alt="Logo" width={250} height={160}  />
       </div>
       
       <div className="flex items-center">
