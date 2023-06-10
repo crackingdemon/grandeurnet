@@ -17,20 +17,20 @@ const postData: DataType[] = [
         name: "Sakshi Sharma",
         profession: '',
         comment: '“Thank you so much for making me look good! I have been receiving compliments about the website from everyone I speak with.',
-        imgSrc: '/images/testimonial/pic1.jpg',
+        imgSrc: '/images/testimonial/neha.jpeg',
     },
 
     
 
 
     {
-        name: "Nancy smith",
+        name: "Nancy ",
         profession: '',
         comment: 'I was looking for a designer who could help me take my business to the next level.They did just that! They took my vision and ran with it, creating a beautiful logo, that perfectly represents my company',
-        imgSrc: '/images/testimonial/nacysmith.jpeg',
+        imgSrc: '/images/testimonial/pooja.jpeg',
     },
     {
-        name: "Cody Fisher",
+        name: "Arjun",
         profession: '',
         comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
         imgSrc: '/images/testimonial/tariun.jpeg',
@@ -39,10 +39,10 @@ const postData: DataType[] = [
         name: "Naresh Gautam",
         profession: '',
         comment: 'I am so gald i choose them for my website. They made the process easy and were so helpful in guiding me through the design process.The result was exactly what i wanted !',
-        imgSrc: '/images/testimonial/user1.svg',
+        imgSrc: '/images/testimonial/sahil.jpeg',
     },
     {
-        name: "luci",
+        name: "Luci",
         profession: '',
         comment: 'Grandeurnet Digital Agency exceeded my expectations! Their expertise and professionalism delivered outstanding results for my business. Highly recommended!',
         imgSrc: '/images/testimonial/user2.svg',
