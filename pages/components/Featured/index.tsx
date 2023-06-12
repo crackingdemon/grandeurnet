@@ -15,7 +15,7 @@ const postData: DataType[] = [
     link: 'https://topskinspecialist.com/', // Example link
   },
   {
-    heading: 'Hollywood SPA.',
+    heading: 'Hollywood\nSPA.',
     imgSrc: '/images/project/hollywoodspa.jpeg',
     link: 'https://demo.grandeurnet.com/', // Example link
   },

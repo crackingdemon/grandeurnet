@@ -9,12 +9,12 @@ const names = [
         user: 'per user, per month',
         button: "More Offers",
         profiles: 'we will',
-        posts: 'provide customised',
-        templates: "plan after",
-        view: "Calendar View",
-        support: 'a deep study',
-        seo:"on your ",
-        website:"business model",
+        posts: ' customise plan',
+        templates: "as per your",
+        view: " business model ",
+        support: 'for confirm',
+        seo:"growth ",
+        website:"",
         social:"",
         dedicated:"",
         category: 'yearly'
@@ -25,12 +25,12 @@ const names = [
         user: 'per user, per month',
         button: "More Offers",
         profiles: 'we will',
-        posts: 'provide customised',
-        templates: "plan after",
-        view: "Calendar View",
-        support: 'a deep study',
-        seo:"on your ",
-        website:"business model",
+        posts: ' customise plan',
+        templates: "as per your",
+        view: " business model ",
+        support: 'for confirm',
+        seo:"growth ",
+        website:"",
         social:"",
         dedicated:"",
         category: 'yearly'
@@ -41,12 +41,12 @@ const names = [
         user: 'per user, per month',
         button: "More Offers",
         profiles: 'we will',
-        posts: 'provide customised',
-        templates: "plan after",
-        view: "Calendar View",
-        support: 'a deep study',
-        seo:"on your ",
-        website:"business model",
+        posts: ' customise plan',
+        templates: "as per your",
+        view: " business model ",
+        support: 'for confirm',
+        seo:"growth ",
+        website:"",
         social:"",
         dedicated:"",
         category: 'yearly'
@@ -160,7 +160,7 @@ const Manage = () => {
               <h2 className='text-5xl sm:text-65xl font-extrabold mb-3'>${items.price}</h2>
               <p className='text-sm font-medium text-bggrey mb-6'>{items.user}</p>
               <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdPy_G-Fzx6Lroa-uhIcPdMBtH9Q7MLVjd1CRzAMwWPZm0bjA/viewform" passHref  legacyBehavior>
-        <a target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6">
+        <a target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-blue hover:scale-125 bg-blue text-white border-2 border-blue rounded-full py-4 px-12 mb-6">
           {items.button}
         </a>
       </Link>
