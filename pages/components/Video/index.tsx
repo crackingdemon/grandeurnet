@@ -22,6 +22,20 @@ const Video = () => {
           
         </div>
 
+        <div className="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl">
+        <div className="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>
+      <iframe
+        className="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"
+        src="https://www.youtube.com/embed/7vSQO98HNh0"
+        allowFullScreen
+      ></iframe>
+    </div>
+          <h1 className="mt-2 text-center text-2xl font-bold text-gray-500">Satisfied Client of Grandeur Net</h1>
+          <p className="my-4 text-center text-sm text-gray-500">Digital Marketing and Promotional Services </p>
+          
+        </div>
+
+
 
         <div className="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-xl">
         <div className="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden" style={{ paddingTop: '56.25%' }}>

@@ -5,24 +5,29 @@ import Image from 'next/image';
 interface DataType {
   heading: string;
   imgSrc: string;
+  link: string; // Add link property to the data type
 }
 
 const postData: DataType[] = [
   {
     heading: 'CRC Derma',
     imgSrc: '/images/project/crcderma.jpeg',
+    link: 'https://topskinspecialist.com/', // Example link
   },
   {
     heading: 'Hollywood SPA.',
     imgSrc: '/images/project/hollywoodspa.jpeg',
+    link: 'https://demo.grandeurnet.com/', // Example link
   },
   {
-    heading: 'Florence',
-    imgSrc: '/images/project/florence.jpeg',
+    heading: 'Doon School Website',
+    imgSrc: '/images/project/doonsainik.jpeg',
+    link: 'https://crackingdemon.github.io/doonschool.github.io/', // Example link
   },
   {
-    heading: 'Mandoli',
-    imgSrc: '/images/project/mandoli.jpeg',
+    heading: 'CRC Neuro',
+    imgSrc: '/images/project/crcjoint.jpeg',
+    link: 'https://topjointpaincentreindehradun.com/', // Example link
   },
 ];
 
@@ -119,14 +124,16 @@ const OurWorkCarousel: React.FC = () => {
         <Slider {...settings} ref={sliderRef}>
           {postData.map((items, i) => (
             <div key={i}>
-              <div className="bg-transparent m-3 pb-12 my-10 rounded-3xl">
-                <Image src={items.imgSrc} alt="gaby" width={636} height={620} className="rounded-2xl" />
-                <div className="w-345">
-                  <h4 className="sm:text-5xl font-bold sm:pt-6 text-center sm:text-start mt-10 text-white">
-                    {items.heading}
-                  </h4>
+              <a href={items.link}> {/* Wrap the slider item's content with an anchor tag */}
+                <div className="bg-transparent m-3 pb-12 my-10 rounded-3xl">
+                  <Image src={items.imgSrc} alt="gaby" width={636} height={620} className="rounded-2xl" />
+                  <div className="w-345">
+                    <h4 className="sm:text-5xl font-bold sm:pt-6 text-center sm:text-start mt-10 text-white">
+                      {items.heading}
+                    </h4>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           ))}
         </Slider>

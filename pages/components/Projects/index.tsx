@@ -51,7 +51,7 @@ const index = () => {
 
             <div className="mt-1 p-2">
               <h2 className="text-slate-700">Blue ocean Gym</h2>
-              <p className="mt-1 text-sm text-slate-400">gym Website</p>
+              <p className="mt-1 text-sm text-slate-400">Gym Website</p>
 
               <div className="mt-3 flex items-end justify-between">
                 
@@ -175,7 +175,7 @@ const index = () => {
 
             <div className="mt-1 p-2">
               <h2 className="text-slate-700">Dermatelogist Landing Page</h2>
-              <p className="mt-1 text-sm text-slate-400">landing Page</p>
+              <p className="mt-1 text-sm text-slate-400">Landing Page</p>
 
               <div className="mt-3 flex items-end justify-between">
                 
@@ -239,7 +239,7 @@ const index = () => {
 
             <div className="mt-1 p-2">
               <h2 className="text-slate-700">CRC Neurologist Page </h2>
-              <p className="mt-1 text-sm text-slate-400">neurologist landing page</p>
+              <p className="mt-1 text-sm text-slate-400">Neurologist Landing Page</p>
 
               <div className="mt-3 flex items-end justify-between">
                 
@@ -367,7 +367,7 @@ const index = () => {
 
             <div className="mt-1 p-2">
               <h2 className="text-slate-700">Doon Sainik website</h2>
-              <p className="mt-1 text-sm text-slate-400">school website </p>
+              <p className="mt-1 text-sm text-slate-400">School website </p>
 
               <div className="mt-3 flex items-end justify-between">
                 
@@ -560,7 +560,7 @@ const index = () => {
 
             <div className="mt-1 p-2">
               <h2 className="text-slate-700">GIC Barechhinna school </h2>
-              <p className="mt-1 text-sm text-slate-400">school website</p>
+              <p className="mt-1 text-sm text-slate-400">School Website</p>
 
               <div className="mt-3 flex items-end justify-between">
                 
@@ -725,10 +725,10 @@ const index = () => {
 
        {/* first */}
        <article className="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:transform hover:scale-105 duration-300">
-          <a href="https://www.instagram.com/littlestanford6/"  target="_blank">
+          <a href="https://winhillglobalschool.com/"  target="_blank">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
-                src="/images/project/littlestanford.jpeg"
+                src="/images/project/winhill2.png"
                 alt="Hotel Photo"
               />
               <div className="flex items-center space-x-1.5 rounded-lg bg-blue-500 px-4 py-1.5 text-white duration-100 hover:bg-blue-600">
@@ -752,8 +752,8 @@ const index = () => {
             </div>
 
             <div className="mt-1 p-2">
-              <h2 className="text-slate-700">Little stanford school</h2>
-              <p className="mt-1 text-sm text-slate-400">Social media handle</p>
+              <h2 className="text-slate-700">Win Hill Global </h2>
+              <p className="mt-1 text-sm text-slate-400">School Website</p>
 
               <div className="mt-3 flex items-end justify-between">
                 
@@ -1009,7 +1009,7 @@ const index = () => {
 
             <div className="mt-1 p-2">
               <h2 className="text-slate-700">Rajdhani website </h2>
-              <p className="mt-1 text-sm text-slate-400">Propert Website </p>
+              <p className="mt-1 text-sm text-slate-400">Property Website </p>
 
               <div className="mt-3 flex items-end justify-between">
                 
@@ -1072,7 +1072,7 @@ const index = () => {
 
             <div className="mt-1 p-2">
               <h2 className="text-slate-700">dehradun dentist  </h2>
-              <p className="mt-1 text-sm text-slate-400">dentist website </p>
+              <p className="mt-1 text-sm text-slate-400">Dentist website </p>
 
               <div className="mt-3 flex items-end justify-between">
                 

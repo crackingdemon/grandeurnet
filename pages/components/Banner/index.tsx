@@ -1,5 +1,6 @@
 import React, { useState, useEffect,ChangeEvent, FormEvent,useRef  } from "react";
 import Typewriter from 'typewriter-effect';
+import Link from 'next/link';
 
 import Image from "next/image";
 const Banner = () => {
@@ -32,10 +33,14 @@ const Banner = () => {
                         </h1>
                     </div>
                     <div className='my-7 text-center lg:text-start'>
-                        <button className='text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue'>
-                            Get Started
-                        </button>
-                    </div>
+  <Link href='https://api.whatsapp.com/send/?phone=%2B919149050623&text&type=phone_number&app_absent=0' passHref={true} legacyBehavior>
+    <a target='_blank' rel='noopener noreferrer'>
+      <button className='text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue'>
+        Get Started
+      </button>
+    </a>
+  </Link>
+</div>
                 </div>
 
                 {/* COLUMN-2 */}

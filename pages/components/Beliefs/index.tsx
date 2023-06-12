@@ -12,7 +12,7 @@ const Beliefs = () => {
                     <h3 className="text-4xl sm:text-65xl font-bold text-grey leading-snug mb-5 text-center sm:text-start">We Can <span className="text-grey">Always <span className="text-white">Shine</span> Together</span></h3>
                     <h5 className="text-offwhite pt-2 mb-5 text-center sm:text-start"></h5>
                     <div className="text-center sm:text-start">
-                    <Link href={"https://www.google.com/maps/dir//grandeurnet/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8b19644b04312995:0xe7616aa73e51ec6d?sa=X&ved=2ahUKEwi8stvO4pP_AhVRzmEKHXe6ANYQ9Rd6BAgpEAU"} target="_blank">
+                    <Link href={"https://docs.google.com/forms/d/e/1FAIpQLSdPy_G-Fzx6Lroa-uhIcPdMBtH9Q7MLVjd1CRzAMwWPZm0bjA/viewform"} target="_blank">
                     <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">Get Started</button>
   </Link>
 </div>
@@ -26,7 +26,7 @@ const Beliefs = () => {
                     <h5 className="bluish pt-2 mb-5 text-center sm:text-start"></h5>
                     <div className="text-center sm:text-start">
 
-                    <Link href={"https://www.google.com/maps/dir//grandeurnet/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8b19644b04312995:0xe7616aa73e51ec6d?sa=X&ved=2ahUKEwi8stvO4pP_AhVRzmEKHXe6ANYQ9Rd6BAgpEAU"} target="_blank">
+                    <Link href={"#services-section"} >
                     <button className="text-xl py-5 px-14 mt-5 font-semibold text-white rounded-full bg-blue border border-blue hover:bg-hoblue">Learn more</button>
   </Link>
                    

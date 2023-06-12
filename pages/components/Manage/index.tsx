@@ -159,7 +159,7 @@ const Manage = () => {
               <h4 className='text-2xl font-bold mb-3'>{items.heading}</h4>
               <h2 className='text-5xl sm:text-65xl font-extrabold mb-3'>${items.price}</h2>
               <p className='text-sm font-medium text-bggrey mb-6'>{items.user}</p>
-              <Link href="https://www.google.com/maps/dir//grandeurnet/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8b19644b04312995:0xe7616aa73e51ec6d?sa=X&ved=2ahUKEwi8stvO4pP_AhVRzmEKHXe6ANYQ9Rd6BAgpEAU" passHref  legacyBehavior>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdPy_G-Fzx6Lroa-uhIcPdMBtH9Q7MLVjd1CRzAMwWPZm0bjA/viewform" passHref  legacyBehavior>
         <a target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-blue bg-transparent hover:bg-blue hover:text-white border-2 border-blue rounded-full py-4 px-12 mb-6">
           {items.button}
         </a>

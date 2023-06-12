@@ -24,6 +24,7 @@ import Queryformpopup from './components/Queryformpopup/index';
 import Video from './components/Video/index'
 import Project from './components/Projects/index'
 import Brand from './components/Brands/index'
+import Toast from './components/Toast/index'
 /* eslint-disable */
 
 const Home = () => {
@@ -108,6 +109,8 @@ const Home = () => {
         <a href="/https://www.grandeurnet.com/terms.html" target="_blank" className="mr-4">Terms</a>
       </div>
     </footer>
+
+<Toast/>
       </main>
       </div>
     </>
