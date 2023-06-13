@@ -14,11 +14,7 @@ const postData: DataType[] = [
     imgSrc: '/images/project/crcderma.jpeg',
     link: 'https://topskinspecialist.com/', // Example link
   },
-  {
-    heading: 'Hollywood\nSPA.',
-    imgSrc: '/images/project/hollywoodspa.jpeg',
-    link: 'https://demo.grandeurnet.com/', // Example link
-  },
+  
   {
     heading: 'Doon School Website',
     imgSrc: '/images/project/doonsainik.jpeg',
@@ -28,6 +24,11 @@ const postData: DataType[] = [
     heading: 'CRC Neuro',
     imgSrc: '/images/project/crcjoint.jpeg',
     link: 'https://topjointpaincentreindehradun.com/', // Example link
+  },
+  {
+    heading: 'Hollywood\nSPA.',
+    imgSrc: '/images/project/hollywoodspa.jpeg',
+    link: 'https://demo.grandeurnet.com/', // Example link
   },
 ];
 

@@ -87,7 +87,7 @@ const names = [
         heading: "Business",
         price: 105,
         user: 'per user, one month',
-        button: "More Offers",
+        button: "More Offers ",
         profiles: 'Online Promotion',
         posts: 'Google page editing',
         templates: "Dedicated project manager",
@@ -164,7 +164,7 @@ const Manage = () => {
           {items.button}
         </a>
       </Link>
-              <hr style={{ color: "darkgrey", width: "50%", margin: "auto" }} />
+              {/* <hr style={{ color: "darkgrey", width: "50%", margin: "auto" }} /> */}
               <h3 className='text-sm font-medium text-darkgrey mb-3 mt-6'>{items.profiles}</h3>
               <h3 className='text-sm font-medium text-darkgrey mb-3'>{items.posts}</h3>
               <h3 className='text-sm font-medium text-darkgrey mb-3'>{items.templates}</h3>
