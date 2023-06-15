@@ -3,7 +3,8 @@ import { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Index: NextPage = () => {
   const router = useRouter();
@@ -21,13 +22,14 @@ const Index: NextPage = () => {
           body: formData,
         })
           .then(() => {
-            alert('Form Submitted. Thanks.');
+            toast.success('Form Submitted. Thanks.'); // Display success toast
             resetForm(); // Reset the form after successful submission
             // Redirect the user to a custom thank-you page
             router.push('/thankyoupage');
           })
           .catch((error) => {
             console.error('Form submission error:', error);
+          ; // Display error toast
             // Handle form submission error
           });
       }
@@ -83,148 +85,159 @@ const Index: NextPage = () => {
           <div className="w-full md:w-2/3 pr-8">
             <div className="flex justify-between">
               <div className="flex items-center">
-                <h1 className="text-3xl text-red-500 font-bold"><Typewriter
-  options={{
-    strings: ['Book a Call With Us ☎️  '],
-    autoStart: true,
-    loop: true,
-  }}
-/></h1>
+                <h1 className="text-3xl text-red-500 font-bold">
+                  <Typewriter
+                    options={{
+                      strings: ['Book a Call With Us ☎️  '],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </h1>
               </div>
               <Image
-  alt="Description of the image"
-  className="cursor-pointer"
-  onClick={() => {
-    setshow(!show);
-    setshow(false);
-  }}
-  src="/images/hero-outline.svg"
-  width={22}
-  height={22}
-/>
+                alt="Description of the image"
+                className="cursor-pointer"
+                onClick={() => {
+                  setshow(!show);
+                  setshow(false);
+                }}
+                src="/images/hero-outline.svg"
+                width={22}
+                height={22}
+              />
             </div>
 
             {/* Form section */}
             <br />
             <form
-  id="bootstrapForm"
-  action="https://docs.google.com/forms/d/e/1FAIpQLSf7wJXszNWIXrORhXmDPJkOnRJEZVvjHYEm0xIdk-jJVYqleQ/formResponse"
-  target="_self"
-  method="POST"
-  className="rounded-lg shadow-lg p-4"
-  style={{ background: 'linear-gradient(45deg, #FF5F6D, #FFC371)' }}
->
-  <div className="flex flex-wrap -mx-2">
-    <div className="w-full sm:w-1/2 px-2">
-      <fieldset>
-        <legend>
-          <label htmlFor="183274325">Name</label>
-        </legend>
-        <div className="form-group">
-          <input
-            id="183274325"
-            type="text"
-            name="entry.183274325"
-            className="form-control"
-          />
-        </div>
-      </fieldset>
-    </div>
-    <div className="w-full sm:w-1/2 px-2">
-      <fieldset>
-        <legend>
-          <label htmlFor="608973755">Email</label>
-        </legend>
-        <div className="form-group">
-          <input
-            id="608973755"
-            type="text"
-            name="entry.608973755"
-            className="form-control"
-          />
-        </div>
-      </fieldset>
-    </div>
-    <div className="w-full sm:w-1/2 px-2">
-      <fieldset>
-        <legend>
-          <label htmlFor="1906255374">WhatsApp Number</label>
-        </legend>
-        <div className="form-group">
-          <input
-            id="1906255374"
-            type="text"
-            name="entry.1906255374"
-            className="form-control"
-          />
-        </div>
-      </fieldset>
-    </div>
-    <div className="w-full sm:w-1/2 px-2">
-      <fieldset>
-        <legend>
-          <label htmlFor="661978007">Business Nature</label>
-        </legend>
-        <div className="form-group">
-          <input
-            id="661978007"
-            type="text"
-            name="entry.661978007"
-            className="form-control"
-          />
-        </div>
-      </fieldset>
-    </div>
-  </div>
+              id="bootstrapForm"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSf7wJXszNWIXrORhXmDPJkOnRJEZVvjHYEm0xIdk-jJVYqleQ/formResponse"
+              target="_self"
+              method="POST"
+              className="rounded-lg shadow-lg p-4"
+              style={{ background: 'linear-gradient(45deg, #FF5F6D, #FFC371)' }}
+            >
+              <div className="flex flex-wrap -mx-2">
+                <div className="w-full sm:w-1/2 px-2">
+                  <fieldset>
+                    <legend>
+                      <label htmlFor="183274325">Name</label>
+                    </legend>
+                    <div className="form-group">
+                      <input
+                        id="183274325"
+                        type="text"
+                        name="entry.183274325"
+                        className="form-control"
+                      />
+                    </div>
+                  </fieldset>
+                </div>
+                <div className="w-full sm:w-1/2 px-2">
+                  <fieldset>
+                    <legend>
+                      <label htmlFor="608973755">Email</label>
+                    </legend>
+                    <div className="form-group">
+                      <input
+                        id="608973755"
+                        type="text"
+                        name="entry.608973755"
+                        className="form-control"
+                      />
+                    </div>
+                  </fieldset>
+                </div>
+                <div className="w-full sm:w-1/2 px-2">
+                  <fieldset>
+                    <legend>
+                      <label htmlFor="1906255374">WhatsApp Number</label>
+                    </legend>
+                    <div className="form-group">
+                      <input
+                        id="1906255374"
+                        type="text"
+                        name="entry.1906255374"
+                        className="form-control"
+                      />
+                    </div>
+                  </fieldset>
+                </div>
+                <div className="w-full sm:w-1/2 px-2">
+                  <fieldset>
+                    <legend>
+                      <label htmlFor="661978007">Business Nature</label>
+                    </legend>
+                    <div className="form-group">
+                      <input
+                        id="661978007"
+                        type="text"
+                        name="entry.661978007"
+                        className="form-control"
+                      />
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
 
-  <fieldset>
-    <legend>Marketing Budget?</legend>
-    <div className="form-group">
-      <div className="radio">
-        <label>
-          <input type="radio" name="entry.536277257" value="Below 50k" />
-          Below 50k
-        </label>
-      </div>
-      <div className="radio">
-        <label>
-          <input type="radio" name="entry.536277257" value="50k to 1lk" />
-          50k to 1lk
-        </label>
-      </div>
-      <div className="radio">
-        <label>
-          <input type="radio" name="entry.536277257" value="1lk to 3lk" />
-          1lk to 3lk
-        </label>
-      </div>
-      <div className="radio">
-        <label>
-          <input type="radio" name="entry.536277257" value="above 3lk" />
-          above 3lk
-        </label>
-      </div>
-    </div>
-  </fieldset>
+              <fieldset>
+                <legend>Marketing Budget?</legend>
+                <div className="form-group">
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.536277257" value="Below 50k" />
+                      Below 50k
+                    </label>
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.536277257" value="50k to 1lk" />
+                      50k to 1lk
+                    </label>
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.536277257" value="1lk to 3lk" />
+                      1lk to 3lk
+                    </label>
+                  </div>
+                  <div className="radio">
+                    <label>
+                      <input type="radio" name="entry.536277257" value="above 3lk" />
+                      above 3lk
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
 
-  <input type="hidden" name="fvv" value="1" />
-  <input type="hidden" name="fbzx" value="-4203744167857321587" />
-  <input type="hidden" name="pageHistory" value="0" />
+              <input type="hidden" name="fvv" value="1" />
+              <input type="hidden" name="fbzx" value="-4203744167857321587" />
+              <input type="hidden" name="pageHistory" value="0" />
 
-  <button
-    className="btn btn-primary  border-2 border-blue-500 shadow-lg hover:shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    type="submit"
-    value="Submit"
-    onClick={() => {
-      setTimeout(() => {
-        setshow(!show);
-        setshow(false);
-      }, 3000); // 3000 milliseconds = 3 seconds
-    }}
-  >
-    Submit
-  </button>
-</form>
+              <button
+                className="btn btn-primary  border-2 border-blue-500 shadow-lg hover:shadow-xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                type="submit"
+                value="Submit"
+                onClick={() => {
+                  setTimeout(() => {
+                    setshow(!show);
+                    setshow(false);
+                  }, 2000); // 3000 milliseconds = 3 seconds
+                  toast.success("Thank you for submitting the form!, Will get back to you soon", {
+                    position: "top-right",
+                    autoClose: 7000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                  });
+                }}
+              >
+                Submit
+              </button>
+            </form>
 
             {/* Form section ends here */}
 
