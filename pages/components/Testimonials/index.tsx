@@ -32,7 +32,7 @@ const postData: DataType[] = [
     {
         name: "Arjun",
         profession: '',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        comment: 'Working with Grandeur Net team for my website SEO has been a game-changer. Their team of experts took the time to understand my requirements and developed a customized digital marketing strategy that aligned perfectly with my website.  I am getting good results on the suggested keywords',
         imgSrc: '/images/testimonial/tariun.jpeg',
     },
     {
